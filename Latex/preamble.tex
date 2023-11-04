@@ -1,0 +1,35 @@
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage[paper=a4paper,margin=0.5in]{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[shortlabels,inline]{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+
+\setlength{\parindent}{0em}
+
+% Produce a heading for an exercise sheet
+% Usage: \heading{<sheet number>}{<date>}
+\newcommand{\heading}[2]{
+    \begin{tabularx}{\textwidth}{Xr}
+        \begin{tabular}[t]{@{}l@{}}
+            \huge{Exercise Sheet #1}
+            \vspace{0.4cm} \\
+            \large{#2}
+        \end{tabular}
+         &
+        \begin{tabular}[t]{@{}ll@{}}
+            Marco Bischoff & 370222 \\
+        \end{tabular}
+    \end{tabularx}
+
+    \vspace{0.5cm}
+    \hrule
+    \vspace{0.5cm}
+}

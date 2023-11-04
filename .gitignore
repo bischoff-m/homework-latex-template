@@ -1,0 +1,13 @@
+*.zip
+
+*.aux
+*.log
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*/.auctex-auto
+*.out
+*.gnuplot
+
+/.vscode
+*/_minted*
