@@ -3,7 +3,7 @@
 This template provides basic structure, a header and commonly used packages for writing
 simple homework assignments in LaTeX.
 
-[↪ Preview](Exercise1/main1.pdf)
+↪ [Preview](Exercise1/main1.pdf)
 
 ## Usage
 
@@ -25,6 +25,7 @@ I use the following on Windows, but you can use any other distributions.
 
 ### Install VS Code extensions
 
+> [!NOTE]
 > The extensions are listed in the `.vscode/extensions.json` file, so VS Code should ask
 > you to install them automatically.
 
@@ -33,7 +34,7 @@ extension is a must-have. It provides core features for editing and compiling La
 documents. Check out the manual for a full list of features.
 
 Also, I find the [Rewrap](https://marketplace.visualstudio.com/items?itemName=stkb.rewrap)
-extension useful for formatting the text. You can use `Alt+Q` to make the text fit the
+extension useful for formatting the text. You can use `Alt + Q` to make the text fit the
 page width.
 
 ### Configure workspace settings
