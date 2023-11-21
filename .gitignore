@@ -9,5 +9,8 @@
 *.out
 *.gnuplot
 
-/.vscode
 */_minted*
+
+# VSCode editor config is part of the template
+# Uncomment once you start working on the project
+# /.vscode
