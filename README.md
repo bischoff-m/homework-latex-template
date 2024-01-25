@@ -34,18 +34,21 @@ extension is a must-have. It provides core features for editing and compiling La
 documents. Check out the manual for a full list of features.
 
 Also, I find the [Rewrap](https://marketplace.visualstudio.com/items?itemName=stkb.rewrap)
-extension useful for formatting the text. You can use `Alt + Q` to make the text fit the
+extension useful for formatting the text. You can use `Alt + Q` to wrap the text to the
 page width.
 
-### Configure workspace settings
+### Preconfigured workspace settings
 
-The page width is set using the `editor.rulers` setting in the `.vscode/settings.json`
-file.
+Have a look at the `.vscode/settings.json` file. It contains the following settings:
 
-Most of the time, I also find it useful to enable the `editor.formatOnSave` setting. This
-is nice for, e.g. `align` environments, where the LaTeX Workshop extension will align the
-`&` characters like below. However, it depends on the text you are writing whether this
-works well or not.
+- **`editor.rulers`**: This sets the page width (number of characters) for the Rewrap
+    extension.
+- **`latex-workshop.view.pdf.viewer`**: This sets the PDF viewer to be used. I prefer the
+    browser, but you can also use the built-in viewer or an external one.
+- **`editor.formatOnSave`**: This enables formatting the text on save. Most of the time I find
+    this useful for, e.g. `align` environments, where the LaTeX Workshop extension will
+    align the `&` characters like below. However, it depends on the text you are writing
+    whether this works well or not.
 
 ```latex
 Before formatting:

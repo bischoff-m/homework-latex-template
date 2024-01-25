@@ -2,5 +2,6 @@
     "editor.formatOnSave": true,
     "editor.rulers": [
         90
-    ]
+    ],
+    "latex-workshop.view.pdf.viewer": "browser"
 }
