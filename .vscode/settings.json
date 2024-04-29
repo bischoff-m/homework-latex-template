@@ -3,5 +3,6 @@
     "editor.rulers": [
         80
     ],
-    "latex-workshop.view.pdf.viewer": "browser"
+    "latex-workshop.view.pdf.viewer": "browser",
+    "files.autoSave": "off"
 }
