@@ -1,7 +1,8 @@
 {
-  "editor.formatOnSave": true,
   "editor.rulers": [80],
-  "latex-workshop.view.pdf.viewer": "browser",
+  "editor.formatOnSave": true,
   "editor.indentSize": "tabSize",
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "files.autoSave": "off",
+  "latex-workshop.view.pdf.viewer": "browser"
 }
