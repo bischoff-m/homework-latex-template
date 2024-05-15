@@ -11,7 +11,6 @@ Enter your name and student ID in the `Preamble/preamble.tex` file. For each ass
 copy the `main<N>.tex` file to a new folder. Add the `.vscode` folder to your `.gitignore`
 file after cloning this repository or delete it if you are not using VS Code.
 
-
 ## VS Code as LaTeX editor
 
 If you want to use VS Code as your LaTeX editor, here is my recommended setup.
