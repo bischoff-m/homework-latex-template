@@ -3,12 +3,12 @@
 This template provides basic structure, a header and commonly used packages for writing
 simple homework assignments in LaTeX.
 
-↪ [Preview](Exercise1/main1.pdf)
+↪ [Preview](Exercise1/main.pdf)
 
 ## Usage
 
 Enter your name and student ID in the `Preamble/preamble.tex` file. For each assignment,
-copy the `main<N>.tex` file to a new folder. Add the `.vscode` folder to your `.gitignore`
+copy the `main.tex` file to a new folder. Add the `.vscode` folder to your `.gitignore`
 file after cloning this repository or delete it if you are not using VS Code.
 
 ## VS Code as LaTeX editor
