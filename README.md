@@ -89,7 +89,7 @@ this feature (e.g. Overleaf), you can use the built-in word wrap feature of
 VS Code. You can use `Alt + Z` to toggle word wrap. I recommend the following
 `.vscode/settings.json` to limit the number of characters per line:
 
-```json
+```jsonc
 {
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 80,
