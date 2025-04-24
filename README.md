@@ -1,15 +1,16 @@
 # 📜 Homework LaTeX Template
 
-This template provides basic structure, a header and commonly used packages for writing
-simple homework assignments in LaTeX.
+This template provides basic structure, a header and commonly used packages for
+writing simple homework assignments in LaTeX.
 
 ↪ [Preview](Exercise1/main.pdf)
 
 ## Usage
 
-Enter your name and student ID in the `Preamble/preamble.tex` file. For each assignment,
-copy the `main.tex` file to a new folder. Add the `.vscode` folder to your `.gitignore`
-file after cloning this repository or delete it if you are not using VS Code.
+Enter your name and student ID in the `Preamble/preamble.tex` file. For each
+assignment, copy the `main.tex` file to a new folder. Add the `.vscode` folder
+to your `.gitignore` file after cloning this repository or delete it if you are
+not using VS Code.
 
 ## VS Code as LaTeX editor
 
@@ -25,29 +26,32 @@ I use the following on Windows, but you can use any other distributions.
 ### Install VS Code extensions
 
 > [!NOTE]
-> The extensions are listed in the `.vscode/extensions.json` file, so VS Code should ask
-> you to install them automatically.
+> The extensions are listed in the `.vscode/extensions.json` file, so VS
+> Code should ask you to install them automatically.
 
-The [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
-extension is a must-have. It provides core features for editing and compiling LaTeX
-documents. Check out the manual for a full list of features.
+The [LaTeX
+Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
+extension is a must-have. It provides core features for editing and compiling
+LaTeX documents. Check out the manual for a full list of features.
 
-Also, I find the [Rewrap](https://marketplace.visualstudio.com/items?itemName=stkb.rewrap)
-extension useful for formatting the text. You can use `Alt + Q` to wrap the text to the
-page width.
+Also, I find the
+[Rewrap](https://marketplace.visualstudio.com/items?itemName=stkb.rewrap)
+extension useful for formatting the text. See the section on word wrap below.
 
 ### Preconfigured workspace settings
 
-Have a look at the `.vscode/settings.json` file. It contains the following settings:
+Have a look at the `.vscode/settings.json` file. It contains the following
+settings:
 
-- **`editor.rulers`**: This sets the page width (number of characters) for the Rewrap
-    extension.
-- **`latex-workshop.view.pdf.viewer`**: This sets the PDF viewer to be used. I prefer the
-    browser, but you can also use the built-in viewer or an external one.
-- **`editor.formatOnSave`**: This enables formatting the text on save. Most of the time I find
-    this useful for, e.g. `align` environments, where the LaTeX Workshop extension will
-    align the `&` characters like below. However, it depends on the text you are writing
-    whether this works well or not.
+- **`editor.rulers`**: This sets the page width (number of characters) for the
+    Rewrap extension.
+- **`latex-workshop.view.pdf.viewer`**: This sets the PDF viewer to be used. I
+    prefer the browser, but you can also use the built-in viewer or an external
+    one.
+- **`editor.formatOnSave`**: This enables formatting the text on save. Most of
+    the time I find this useful for, e.g. `align` environments, where the LaTeX
+    Workshop extension will align the `&` characters like below. However, it
+    depends on the text you are writing whether this works well or not.
 
 ```latex
 Before formatting:
@@ -71,9 +75,34 @@ After formatting:
 \end{flalign*}
 ```
 
+### Word Wrap
+
+I prefer to use the
+[Rewrap](https://marketplace.visualstudio.com/items?itemName=stkb.rewrap)
+extension to wrap text. You can use `Alt + Q` to wrap the text to the page width
+defined by. This has the benefit that you can decide when to wrap the text, as
+e.g. tables or equations should normally not be wrapped. Also, `git diff` works
+better with wrapped text.
+
+However, if you use other LaTeX editors along with VS Code that do not support
+this feature (e.g. Overleaf), you can use the built-in word wrap feature of
+VS Code. You can use `Alt + Z` to toggle word wrap. I recommend the following
+`.vscode/settings.json` to limit the number of characters per line:
+
+```json
+{
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 80,
+    "editor.rulers": [80],
+    // If you have Rewrap installed
+    "rewrap.autoWrap.enabled": false
+}
+```
+
 ### Remarks
 
-The [Github Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
-extension saved me a lot of time, no matter what kind of document I was writing. So if you
-have access to it (students have via [GitHub Education](https://education.github.com/)),
-definitely give it a try.
+The [Github
+Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+extension saved me a lot of time, no matter what kind of document I was writing.
+So if you have access to it (students have via [GitHub
+Education](https://education.github.com/)), definitely give it a try.
